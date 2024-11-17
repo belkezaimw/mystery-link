@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mysteriouslink</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="popup" class="popup">
+    <p>Fail to solve the challenges and your friend will be lost forever. Or worse, you'll be next...</p>
+    </div>
+    <div class="container">
+    <div class="box">
+        <h3>***THE DISTRESS SIGNAL***</h3>
+        <p class="challenge-text">
+            Your friend has sent you a strange message in Morse code. Can you decode it to uncover what they're trying to tell you?
+        <p class="code">
+            - .... . -.-- .... .- ...- . ..-. --- ..- -. -.. -- .<br><br>
+            - .... .. ... .. ... --- ..- .-. --- -. .-.. -.-- -.-. .... .- -. -.-. .<br><br>
+            .. .- -- .-.. . .- ...- .. -. --. -.-. .-.. ..- . ...
+        </p>
+
+        <p class="note"> - Dots and dashes reveal more than you think. Start by identifying the pattern and translating each sequence to get the secret message.</p>
+    </div>
+
+    <div class="box">
+        <h3>***THE SHIFTED WARNING***</h3>
+        <p class="challenge-text">
+            Another coded message has appeared from your friend, hinting at a dark and an urgent warning. The letters seem scrambled…could they be shifted by a hidden key?
+        <p class="code"> Encrypted message: Lt kfxy, mjqurj. Ymjd rjsyntsji 31/12/2024. Ymnx htsywtq nx ifsljwtzx.</p>
+        <p class="note">- This is a Caesar cipher where each letter is shifted by a  fixed amount . Try shifting  by 5 to see if the message starts to make sense.</p>
+    </div>
+
+    <div class="box">
+        <h3>***THE LAST CLUE***</h3>
+        <p class="challenge-text">
+            Your friend has left a photo of random codes he found in the laboratory. Along with the image, there’s an audio message that holds the key to your friend’s location .
+        </p>
+        <div class="qr-code">
+        <img src="qrcode.png" alt="QR Code" />
+        </div>
+        <p class="note">- Once decoded, shift each letter by 3 to uncover the name of the city.
+        </p>
+    </div>
+    </div>
+    <script>
+    window.addEventListener("load", () => {
+        const popup = document.getElementById("popup");
+        popup.style.display = "block";
+
+        setTimeout(() => {
+        popup.style.display = "none";
+        }, 5000);
+    });
+    </script>
+</body>
+</html>
